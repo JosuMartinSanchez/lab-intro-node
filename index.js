@@ -34,9 +34,28 @@ class SortedList {
     return this.items[0];
   }
 
-  sum() {}
+  sum() {
+    let sum = 0
+    this.items.forEach((eachElement)=>{
+      sum += eachElement
+    })
+    return sum
+  }
 
-  avg() {}
+  avg() {
+    let sum = 0
+    if (this.items.length===0){
+      throw new Error("EmptySortedList")
+    }
+      this.items.forEach((eachElement)=>{
+        sum += eachElement
+      })
+      return sum / this.items.length
+    
+    
+
+
+  }
 }
 
 module.exports = SortedList;
