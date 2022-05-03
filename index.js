@@ -1,7 +1,17 @@
 class SortedList {
-  constructor() {}
+  constructor() {
+    this.items = []
+    this.length= 0
+  }
 
-  add(item) {}
+  add(item) {
+    this.items.push(item)
+    this.length ++
+    this.items.sort((a,b)=>{
+      a-b
+      
+    })
+  }
 
   get(pos) {}
 
